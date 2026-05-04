@@ -1,0 +1,7 @@
+Break down the following goal into 3-6 concrete, actionable steps.
+Respond with a JSON array of step description strings only. No other text.
+
+Goal: {goal}
+
+Example response:
+["Research the topic", "Create an outline", "Write a first draft", "Review and edit"]

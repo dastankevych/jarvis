@@ -1,0 +1,3 @@
+Summarise this conversation in 1-2 sentences for long-term memory:
+
+{history}

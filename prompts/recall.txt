@@ -1,0 +1,6 @@
+The user asks: "{question}"
+
+{memory_sections}
+
+You DO have memory of past sessions — it is shown above.
+Use it to answer the user's question. Do NOT say you cannot recall past interactions. Be concise.

@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS facts (
+    id        INTEGER PRIMARY KEY AUTOINCREMENT,
+    category  TEXT NOT NULL,
+    content   TEXT NOT NULL,
+    ts        DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS summaries (
+    id  INTEGER PRIMARY KEY AUTOINCREMENT,
+    text TEXT NOT NULL,
+    ts   DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS goals (
+    id           INTEGER PRIMARY KEY AUTOINCREMENT,
+    goal         TEXT NOT NULL,
+    status       TEXT NOT NULL DEFAULT 'active',
+    created_at   DATETIME DEFAULT CURRENT_TIMESTAMP,
+    completed_at DATETIME
+);
+
+CREATE TABLE IF NOT EXISTS steps (
+    id           INTEGER PRIMARY KEY AUTOINCREMENT,
+    goal_id      INTEGER NOT NULL,
+    step_order   INTEGER NOT NULL DEFAULT 0,
+    description  TEXT NOT NULL,
+    status       TEXT NOT NULL DEFAULT 'active',
+    created_at   DATETIME DEFAULT CURRENT_TIMESTAMP,
+    completed_at DATETIME,
+    FOREIGN KEY (goal_id) REFERENCES goals(id)
+);
