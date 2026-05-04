@@ -12,6 +12,8 @@ A modular, voice-enabled AI assistant powered by a local LLM (Ollama). Supports 
 - **Long-term memory** — facts about the user and session summaries stored in SQLite
 - **Built-in tools** — datetime, calculator, web search, shell commands
 
+Video link: https://drive.google.com/file/d/15ZbDIgjFSOlKINs-L6e9ZIPfrjC0eOvH/view?usp=sharing
+
 ## Project Structure
 
 ```
